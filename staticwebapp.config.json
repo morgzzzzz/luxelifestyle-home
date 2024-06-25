@@ -1,0 +1,33 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/join",
+      "rewrite": "/join.html"
+    },
+    {
+      "route": "/aboutus",
+      "rewrite": "/aboutus.html"
+    },
+    {
+      "route": "/home",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/lander",
+      "rewrite": "/index.html"
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*", "/css/*"]
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404.html"
+    }
+  }
+}
